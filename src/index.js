@@ -1,12 +1,5 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
-import {
-  getFirestore,
-  doc,
-  getDoc,
-  getDocs,
-  collection,
-} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
-// TODO: Replace the following with your app's Firebase project configuration
+import { initializeApp } from "firebase/app";
+
 const firebaseConfig = {
   apiKey: "AIzaSyCuhuyi-IWAhbbDQYx87IwkVbS6K07iDR0",
   authDomain: "studieledd.firebaseapp.com",
@@ -18,4 +11,4 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+// const db = getFirestore(app);
