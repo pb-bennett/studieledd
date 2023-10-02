@@ -1,0 +1,14 @@
+{
+  "name": "studieledd",
+  "version": "1.0.0",
+  "description": "A simple tool to help students connect with one another to form study groups, especially those studying remotely.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Bennett",
+  "license": "MIT",
+  "dependencies": {
+    "firebase": "^10.4.0"
+  }
+}
