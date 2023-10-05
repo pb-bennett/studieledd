@@ -1,6 +1,6 @@
 const fs = require("fs");
 const { initializeApp } = require("firebase/app");
-const { getFirestore, collection, getDocs } = require("firebase/firestore");
+const { getFirestore, collection, getDocs, addDoc, writeBatch, doc, GeoPoint } = require("firebase/firestore");
 
 const firebaseConfig = {
   apiKey: "AIzaSyCuhuyi-IWAhbbDQYx87IwkVbS6K07iDR0",
@@ -17,10 +17,32 @@ const db = getFirestore(app);
 
 const collectionRef = collection(db, "users");
 
+// const dummyUsersString = fs.readFileSync("./dummyData.json");
+// const dummyUsers = JSON.parse(dummyUsersString);
+
+// const geo = new GeoPoint(60.391262, 5.322054);
+
+// dummyUsers.forEach((user) => (user.geolocation = new GeoPoint(user.geolocation.latitude, user.geolocation.longitude)));
+// // console.log(dummyUsers);
+
+// const batch = writeBatch(db);
+// dummyUsers.forEach((user) => {
+//   const docRef = doc(collectionRef);
+//   batch.set(docRef, user);
+// });
+// batch
+//   .commit()
+//   .then(() => {
+//     console.log("upload success");
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   });
+
 getDocs(collectionRef).then((snapshot) => {
   let users = [];
   snapshot.docs.forEach((doc) => users.push({ ...doc.data(), id: doc.id }));
-  // console.log(users);
+  users.forEach((user) => console.log(user.geolocation._lat));
   // const usersJson = JSON.stringify(users);
   // fs.writeFile("dummyData.json", usersJson, "utf-8", () => console.log("written"));
   // console.log(usersJson);
