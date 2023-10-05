@@ -25,6 +25,10 @@
   margin: 0;
 }
 
+.tooltip-name {
+  color: rgb(159, 127, 255);
+}
+
 /* .tooltip-name {
   margin: 0;
 } */
