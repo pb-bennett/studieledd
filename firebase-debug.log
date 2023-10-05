@@ -1,0 +1,44 @@
+[debug] [2023-10-05T12:54:50.052Z] ----------------------------------------------------------------------
+[debug] [2023-10-05T12:54:50.054Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-10-05T12:54:50.055Z] CLI Version:   12.6.2
+[debug] [2023-10-05T12:54:50.055Z] Platform:      win32
+[debug] [2023-10-05T12:54:50.055Z] Node Version:  v19.4.0
+[debug] [2023-10-05T12:54:50.055Z] Time:          Thu Oct 05 2023 14:54:50 GMT+0200 (Central European Summer Time)
+[debug] [2023-10-05T12:54:50.055Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-05T12:54:50.173Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-05T12:54:50.173Z] > authorizing via signed-in user (pb.bennett.uk@gmail.com)
+[debug] [2023-10-05T12:54:50.173Z] [iam] checking project studieledd for permissions ["firebase.projects.get"]
+[debug] [2023-10-05T12:54:50.174Z] > refreshing access token with scopes: []
+[debug] [2023-10-05T12:54:50.176Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-10-05T12:54:50.176Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-10-05T12:54:50.260Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-10-05T12:54:50.260Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-10-05T12:54:50.273Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/studieledd:testIamPermissions [none]
+[debug] [2023-10-05T12:54:50.274Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/studieledd:testIamPermissions x-goog-quota-user=projects/studieledd
+[debug] [2023-10-05T12:54:50.274Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studieledd:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-10-05T12:54:50.993Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/studieledd:testIamPermissions 200
+[debug] [2023-10-05T12:54:50.993Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studieledd:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-10-05T12:54:50.994Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studieledd [none]
+[debug] [2023-10-05T12:54:51.273Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studieledd 200
+[debug] [2023-10-05T12:54:51.273Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studieledd {"projectId":"studieledd","projectNumber":"147272146538","displayName":"StudieLedd","name":"projects/studieledd","resources":{"hostingSite":"studieledd"},"state":"ACTIVE","etag":"1_c001e382-6ce5-4797-aab3-0e38ae990b2e"}
+[info] 
+[info] === Serving from 'D:\OneDrive\GitHub\studieledd'...
+[info] 
+[debug] [2023-10-05T12:54:51.276Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studieledd/sites 
+[debug] [2023-10-05T12:54:52.243Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studieledd/sites 200
+[debug] [2023-10-05T12:54:52.243Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studieledd/sites {"sites":[{"name":"projects/studieledd/sites/studieledd","defaultUrl":"https://studieledd.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-10-05T12:54:52.243Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studieledd/webApps/-/config [none]
+[debug] [2023-10-05T12:54:52.934Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studieledd/webApps/-/config 200
+[debug] [2023-10-05T12:54:52.934Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studieledd/webApps/-/config {"projectId":"studieledd","appId":"1:147272146538:web:0ae8762725ac4871e13413","storageBucket":"studieledd.appspot.com","apiKey":"AIzaSyCuhuyi-IWAhbbDQYx87IwkVbS6K07iDR0","authDomain":"studieledd.firebaseapp.com","messagingSenderId":"147272146538","measurementId":"G-RG9YKM2PG6"}
+[debug] [2023-10-05T12:54:52.936Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studieledd [none]
+[debug] [2023-10-05T12:54:53.140Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studieledd 200
+[debug] [2023-10-05T12:54:53.140Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studieledd {"projectId":"studieledd","projectNumber":"147272146538","displayName":"StudieLedd","name":"projects/studieledd","resources":{"hostingSite":"studieledd"},"state":"ACTIVE","etag":"1_c001e382-6ce5-4797-aab3-0e38ae990b2e"}
+[info] i  hosting[studieledd]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[studieledd]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [05/Oct/2023:12:54:56 +0000] "GET / HTTP/1.1" 200 688 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [05/Oct/2023:12:54:56 +0000] \"GET / HTTP/1.1\" 200 688 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [05/Oct/2023:12:54:56 +0000] "GET /MarkerCluster.css HTTP/1.1" 200 886 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [05/Oct/2023:12:54:56 +0000] \"GET /MarkerCluster.css HTTP/1.1\" 200 886 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [05/Oct/2023:12:54:56 +0000] "GET /styles.css HTTP/1.1" 200 645 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [05/Oct/2023:12:54:56 +0000] \"GET /styles.css HTTP/1.1\" 200 645 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [05/Oct/2023:12:54:56 +0000] "GET /normalize.css HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [05/Oct/2023:12:54:56 +0000] \"GET /normalize.css HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [05/Oct/2023:12:54:56 +0000] "GET /MarkerCluster.Default.css HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [05/Oct/2023:12:54:56 +0000] \"GET /MarkerCluster.Default.css HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [05/Oct/2023:12:54:56 +0000] "GET /bundle.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [05/Oct/2023:12:54:56 +0000] \"GET /bundle.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\""}}
