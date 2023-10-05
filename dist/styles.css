@@ -22,4 +22,15 @@
 .tooltip-container {
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
+
+/* .tooltip-name {
+  margin: 0;
+} */
+.leaflet-popup-content {
+  padding: 0.3rem;
+}
+/* .leaflet-popup-content p {
+  margin: 0;
+} */
