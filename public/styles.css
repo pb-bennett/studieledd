@@ -27,15 +27,29 @@
 
 .tooltip-name {
   color: rgb(90, 90, 90);
-  text-transform: uppercase;
+  text-transform: capitalize;
+  border-bottom: 1px solid darkcyan;
+  margin: 0rem 0 0.5rem 0;
+  padding-bottom: 0.3rem;
+  padding-top: 0.6rem;
 }
 
-/* .tooltip-name {
-  margin: 0;
-} */
+.tooltip-location {
+  text-transform: uppercase;
+  letter-spacing: normal;
+}
+
+.tooltip-country {
+  font-size: 0.7rem;
+}
+
+.tooltip-course {
+  margin-top: 0.5rem;
+  border-top: 1px solid darkcyan;
+  padding-top: 0.3rem;
+}
+
 .leaflet-popup-content {
   padding: 0.3rem;
+  margin: 0.2rem;
 }
-/* .leaflet-popup-content p {
-  margin: 0;
-} */

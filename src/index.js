@@ -31,18 +31,14 @@ const markers = L.markerClusterGroup();
 const updateMap = () => {
   map.removeLayer(markers);
   userArray = users.map((user) => {
-    // const tooltipHTML = `
-    // <div class="tooltip-container">
-    //   <p class="tooltip-name">Paul</p>
-    //   <p class="tooltip-course">AUG-23-FT</p>
-    // </div>`;
     return {
       marker: L.marker([user.geolocation.coordinates._lat, user.geolocation.coordinates._long]).bindPopup(`
       <div class="tooltip-container">
         <div class="tooltip-name">${`${user.firstName} ${user.lastName}`}</div>
-        <div class="tooltip-course">${user.course}</div>
         <div class="tooltip-location">${user.geolocation.location}</div>
-
+        <div class="tooltip-country">${user.geolocation.country}</div>
+        <div class="tooltip-course">${user.course}</div>
+        
       </div>`),
       ...user,
     };
