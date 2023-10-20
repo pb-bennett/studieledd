@@ -55,11 +55,15 @@ const updateMap = () => {
     //   <p class="tooltip-course">AUG-23-FT</p>
     // </div>`;
     return {
-      marker: L.marker([user.geolocation._lat, user.geolocation._long])
-        .bindPopup(`    
+      marker: L.marker([
+        user.geolocation.coordinates._lat,
+        user.geolocation.coordinates._long,
+      ]).bindPopup(`
       <div class="tooltip-container">
-        <div class="tooltip-name">${user.firstName}</div>
+        <div class="tooltip-name">${`${user.firstName} ${user.lastName}`}</div>
         <div class="tooltip-course">${user.course}</div>
+        <div class="tooltip-location">${user.geolocation.location}</div>
+
       </div>`),
       ...user,
     };
